@@ -3,6 +3,13 @@
 
 
 ## Initialization kafka cluster on Docker
+STEP 0: Create directories
+```BASH
+mkdir -p data/kafka1
+mkdir -p data/kafka2
+mkdir -p data/kafka3
+```
+
 
 STEP 1: Get a random cluster id from a temporary kafka container
 
