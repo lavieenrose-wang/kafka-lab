@@ -1,5 +1,7 @@
 # Kafka-Lab
 
+This is a Lab of Data Engineering, which contains a Kafka cluster and a Spark cluster, the version of the Kafka cluster is 3.7.2, and the version of the spark cluster is 3.5.1.
+
 
 
 ## Initialization kafka cluster on Docker
@@ -71,3 +73,15 @@ docker compose restart
 
 cluster has been correctly configured.
 
+
+
+## The details of nodes
+
+This is a cluster with 3 kafka nodes and 3 spark nodes in the docker container environment. For all spark nodes, 1 master node and 2 worker nodes have been configured while all ports have been correctly reflected to local ports. About the reflection, see the table below
+
+| Role         | Port GP-#1 (GUI)            | Port GP-#2 (Communication)  |
+| ------------ | --------------------------- | --------------------------- |
+| Spark-Master | Local: 8080 => Docker: 8080 | Local: 7077 => Docker: 7077 |
+| Kafka-#1     | -                           | Local: 9092 => Docker: 9092 |
+| Kafka-#2     | -                           | Local: 9093 => Docker: 9093 |
+| Kafka-#3     | -                           | Local: 9094 => Docker: 9094 |
