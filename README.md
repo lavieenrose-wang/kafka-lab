@@ -4,7 +4,7 @@ This is a Lab of Data Engineering, which contains a Kafka cluster and a Spark cl
 
 
 
-## Initialization kafka cluster on Docker
+## Initialize kafka cluster on Docker
 STEP 0: Create directories
 ```BASH
 mkdir -p data/kafka1
